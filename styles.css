@@ -23,3 +23,29 @@ main{margin-left:250px;min-height:100vh}header{height:72px;background:#fff;borde
 .table .num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .table td .badge{white-space:nowrap}
 @media(max-width:720px){.table{table-layout:auto}.table th,.table td{overflow:visible;text-overflow:clip}}
+@media print{
+  body.printing-preview .report-paper:not(.print-target){display:none!important}
+  body.printing-preview .print-target{display:block!important}
+  body.printing-preview #content{padding:0!important}
+  body.printing-preview .modal-backdrop{display:none!important}
+}
+.teacher-context{line-height:1.5}
+
+/* Correcciones finales de impresión y tablas de reportes */
+.report-paper .table{table-layout:auto;min-width:0;width:100%}
+.report-paper .table th,.report-paper .table td{overflow:visible;text-overflow:clip;white-space:normal;word-break:normal}
+.report-paper .table th:nth-child(1),.report-paper .table td:nth-child(1){width:auto}
+.report-paper .table th:nth-last-child(1),.report-paper .table td:nth-last-child(1){width:auto}
+.report-paper .table td{vertical-align:top}
+@page{size:A4 portrait;margin:12mm}
+@media print{
+  body{background:#fff!important}
+  .report-paper{padding:0!important;width:100%!important;max-width:none!important}
+  .report-paper .table{font-size:9px!important}
+  .report-paper .table th,.report-paper .table td{padding:6px!important}
+  .report-paper h2{font-size:15px!important}
+  .report-paper .mini-stats{break-inside:avoid}
+  .report-paper tr{break-inside:avoid}
+}
+
+.student-split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.student-split h3{margin-top:0;font-size:13px}@media(max-width:720px){.student-split{grid-template-columns:1fr}}
