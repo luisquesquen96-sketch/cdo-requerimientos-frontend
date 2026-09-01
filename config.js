@@ -1,0 +1,1 @@
+window.CDO_CONFIG={url:"https://szfxdwngxahnigplyqdh.supabase.co",key:"sb_publishable_o8wSW-1fRQTn7u57IRhKZw_Mn4xjOrc",year:2026,institutionName:"COLEGIO PERUANO CHINO \"DIEZ DE OCTUBRE\""};
