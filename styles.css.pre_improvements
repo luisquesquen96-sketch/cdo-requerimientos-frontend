@@ -49,15 +49,3 @@ main{margin-left:250px;min-height:100vh}header{height:72px;background:#fff;borde
 }
 
 .student-split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.student-split h3{margin-top:0;font-size:13px}@media(max-width:720px){.student-split{grid-template-columns:1fr}}
-/* Mejoras de alineación y operación administrativa */
-.student-row td { vertical-align: middle; }
-.student-last, .student-first, .student-cell { white-space: nowrap; text-align: left; }
-.student-last { min-width: 220px; }
-.student-first { min-width: 280px; }
-.inline-field { display:flex; gap:8px; align-items:center; }
-.inline-field select { flex:1; min-width:0; }
-.action-panel { min-height:150px; }
-.action-panel p { min-height:42px; }
-.settings-tools { margin-top:10px; }
-.alert-item.info { border-left:4px solid #5c7c9e; }
-@media (max-width:900px){ .student-last,.student-first { white-space:normal; min-width:0; } .inline-field { flex-direction:column; align-items:stretch; } }
